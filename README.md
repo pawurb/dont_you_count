@@ -2,7 +2,7 @@
 
 [ActiveAdmin](https://github.com/activeadmin/activeadmin) is a great way to boostrap a good looking and customizable admin interface in no time. However there are some pererformance issues related to using this tool.
 
-## What is it ?
+## What is it about?
 
 When displaying the index view AA automatically issues a `SELECT COUNT(*)` SQL query in order to enable pagination. As long as you have no more than couple thousand records in your db it is instant. However once your collections start getting bigger this single query could timeout your server. And this is no good. Setting:
 ````ruby
@@ -14,7 +14,9 @@ does not prevent the `count` query.
 
 Gemfile
 
-`gem 'dont_you_count', github: 'pawurb/dont_you_count'`
+``` ruby
+gem 'dont_you_count' # below activeadmin gem
+```
 
 config/initializers/active_admin.rb
 
@@ -24,7 +26,7 @@ ActiveAdmin.setup do |config|
 end
 ````
 
-That's it. The `count` query will no longer be issued for `product` and `offer` models. The total count will be guessed instead (based on [this gist](https://gist.github.com/sononum/6183139). It breaks the last pagination button but it is better then breaking the servers.
+That's it. The `count` query will no longer be issued for `product` and `offer` models. The total count will be guessed instead (based on [this gist](https://gist.github.com/sononum/6183139)). It breaks the last pagination button but it is better then breaking the servers.
 
 ## Compatibility
 
