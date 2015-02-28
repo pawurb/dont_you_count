@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'dont_you_count/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = ""
+  gem.name          = "dont_you_count"
   gem.version       = DontYouCount::VERSION
   gem.authors       = ["pawurb"]
   gem.email         = ["p.urbanek89@gmail.com"]
