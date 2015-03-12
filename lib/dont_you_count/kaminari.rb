@@ -3,7 +3,7 @@ module Kaminari
   module PageScopeMethods
     def total_count(column_name = :all, options = {})
       if ActiveAdmin.application.dont_count.include?(entry_name)
-        @_hacked_total_count || (@_hacked_total_count = self.connection.execute("SELECT (reltuples)::integer FROM pg_class r WHERE relkind = 'r' AND relname ='#{table_name}'").first["reltuples"].to_i)
+        2000000
       else
         @total_count ||= begin
           c = except(:offset, :limit, :order)
