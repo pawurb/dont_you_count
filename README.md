@@ -26,7 +26,7 @@ ActiveAdmin.setup do |config|
 end
 ````
 
-That's it. The `count` query will no longer be issued for `product` and `offer` models. The total count will be guessed instead (based on [this gist](https://gist.github.com/sononum/6183139)). It breaks the last pagination button but it is better then breaking the servers.
+That's it. The `count` query will no longer be issued for `product` and `offer` models. The total count will be set to 2 million. I don't know if it is the best idea but works for my case. It breaks the last pagination button but it is better then breaking the servers. PRs are welcome.
 
 ## Compatibility
 
