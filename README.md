@@ -1,6 +1,6 @@
 # Don't you count
 
-[ActiveAdmin](https://github.com/activeadmin/activeadmin) is a great way to boostrap a good looking and customizable admin interface in no time. However there are some pererformance issues related to using this tool.
+[ActiveAdmin](https://github.com/activeadmin/activeadmin) is a great way to boostrap a good looking and customizable admin interface in no time. However there are some performance issues related to using it.
 
 ## What is it about?
 
