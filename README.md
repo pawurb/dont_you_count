@@ -26,10 +26,8 @@ ActiveAdmin.setup do |config|
 end
 ````
 
-That's it. The `count` query will no longer be issued for `product` and `offer` models. The total count will be set to 2 million. I don't know if it is the best idea but works for my case. It breaks the last pagination button but it is better then breaking the servers. PRs are welcome.
+That's it. The `count` query will no longer be issued for `product` and `order` models. The total count will be set to 2 million. I don't know if it is the best idea but works for my case. It breaks the last pagination button but it is better then breaking the servers. PRs are welcome.
 
 ## Compatibility
 
 Tested to work with activeadmin (1.0.0.pre) and kaminari (0.16.1). Let me know if you notice any problems with other versions.
-
-Pull requests are welcome.
