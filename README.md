@@ -31,3 +31,5 @@ That's it. The `count` query will no longer be issued for `product` and `order` 
 ## Compatibility
 
 Tested to work with activeadmin (1.0.0.pre) and kaminari (0.16.1). Let me know if you notice any problems with other versions.
+
+The newest version of AA has the issue resolved according to [this](https://github.com/activeadmin/activeadmin/commit/3f9efd1c57ca78477ea9eb8268812bf5a038565d).
