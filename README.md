@@ -5,9 +5,11 @@
 ## What is it about?
 
 When displaying the index view AA automatically issues a `SELECT COUNT(*)` SQL query in order to enable pagination. As long as you have no more than couple thousand records in your db it is instant. However once your collections start getting bigger this single query could timeout your server. And this is no good. Setting:
-````ruby
-    index pagination_total: false do ...
+
+```ruby
+    index pagination_total: false do 
 ```
+
 does not prevent the `count` query.
 
 ## How to use ?
